@@ -1739,10 +1739,10 @@ class GameEngine {
 
             // Rim protector standing DIRECTLY under the opposing basket (x = 2880)
             this.opponents = [
-                new Entity(1100, 465, 'opponent', 'red', 99, 'buzz', '#fde68a'),
-                new Entity(1650, 435, 'opponent', 'red', 12, 'short', '#b45309'),
-                new Entity(2300, 485, 'opponent', 'red', 8, 'afro', '#78350f'),
-                new Entity(2880, 465, 'opponent', 'red', 2, 'ponytail', '#92400e') // Posterized victim
+                new Entity(1100, 465, 'opponent', 'red', 99, 'ponytail', '#fde68a'),
+                new Entity(1650, 435, 'opponent', 'red', 12, 'ponytail', '#b45309'),
+                new Entity(2300, 485, 'opponent', 'red', 08, 'ponytail', '#78350f'),
+                new Entity(2880, 465, 'opponent', 'red', 02, 'ponytail', '#92400e') // Posterized victim
             ];
             for (const o of this.opponents) {
                 o.facing = 'left';
@@ -1860,7 +1860,7 @@ class GameEngine {
                 new Entity(1550, 435, 'opponent', 'red', 22, 'short', '#b45309'),
                 new Entity(1610, 495, 'opponent', 'red', 33, 'afro', '#78350f'),
                 new Entity(1680, 465, 'opponent', 'red', 45, 'curly', '#fde68a'),
-                new Entity(1760, 440, 'opponent', 'red', 55, 'short', '#92400e')
+                new Entity(1760, 440, 'opponent', 'red', 02, 'ponytail', '#92400e')
             ];
             for (const o of this.opponents) {
                 o.facing = 'left';
