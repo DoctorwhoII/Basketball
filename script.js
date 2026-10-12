@@ -1860,7 +1860,7 @@ class GameEngine {
                 new Entity(1550, 435, 'opponent', 'red', 22, 'short', '#b45309'),
                 new Entity(1610, 495, 'opponent', 'red', 33, 'afro', '#78350f'),
                 new Entity(1680, 465, 'opponent', 'red', 12, 'curly', '#fde68a'),
-                new Entity(1760, 440, 'opponent', 'red', 02, 'short', '#92400e')
+                new Entity(1760, 440, 'opponent', 'red', 02, 'ponytail', '#92400e')
             ];
             for (const o of this.opponents) {
                 o.facing = 'left';
