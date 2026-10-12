@@ -1,5 +1,5 @@
 // ==========================================
-// FATIMA #25 - PIXEL BASKETBALL CINEMATIC ENGINE
+// FATIMA #24 - PIXEL BASKETBALL CINEMATIC ENGINE
 // ==========================================
 
 // ==========================================
@@ -264,7 +264,7 @@ class SoundManager {
             noise.start(now);
 
             // CROWD VOICES: overlapping, slightly varied vocal-like tones
-            const frequencies = [180, 0, 320, 420, 550, 680];
+            const frequencies = [180, 240, 320, 420, 550, 680];
 
             frequencies.forEach((frequency, index) => {
                 const osc = ctx.createOscillator();
@@ -940,7 +940,7 @@ class Hoop {
 // ARTICULATED ENTITY SYSTEM
 // ==========================================
 class Entity {
-    constructor(x, y, type, team, number = 25, hairStyle = 'ponytail', skinTone = '#fde68a') {
+    constructor(x, y, type, team, number = 24, hairStyle = 'ponytail', skinTone = '#fde68a') {
         this.x = x;
         this.y = y;
         this.vx = 0;
@@ -1616,7 +1616,7 @@ class GameEngine {
         this.hoopLeft = new Hoop(100, 320, 'left');
         this.hoopRight = new Hoop(2900, 320, 'right');
 
-        this.fatima = new Entity(200, 465, 'fatima', 'blue', 25, 'ponytail', '#fde68a');
+        this.fatima = new Entity(200, 465, 'fatima', 'blue', 24, 'ponytail', '#fde68a');
         this.teammates = [
             new Entity(140, 435, 'teammate', 'blue', 11, 'afro', '#d97706'),
             new Entity(90, 495, 'teammate', 'blue', 7, 'braids', '#92400e'),
@@ -1860,7 +1860,7 @@ class GameEngine {
                 new Entity(1550, 435, 'opponent', 'red', 22, 'short', '#b45309'),
                 new Entity(1610, 495, 'opponent', 'red', 33, 'afro', '#78350f'),
                 new Entity(1680, 465, 'opponent', 'red', 12, 'curly', '#fde68a'),
-                new Entity(1760, 440, 'opponent', 'red', 02, 'ponytail', '#92400e')
+                new Entity(1760, 440, 'opponent', 'red', 02, 'short', '#92400e')
             ];
             for (const o of this.opponents) {
                 o.facing = 'left';
