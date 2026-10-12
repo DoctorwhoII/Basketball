@@ -1,5 +1,5 @@
 // ==========================================
-// FATIMA #24 - PIXEL BASKETBALL CINEMATIC ENGINE
+// FATIMA #25 - PIXEL BASKETBALL CINEMATIC ENGINE
 // ==========================================
 
 // ==========================================
@@ -1616,7 +1616,7 @@ class GameEngine {
         this.hoopLeft = new Hoop(100, 320, 'left');
         this.hoopRight = new Hoop(2900, 320, 'right');
 
-        this.fatima = new Entity(200, 465, 'fatima', 'blue', 24, 'ponytail', '#fde68a');
+        this.fatima = new Entity(200, 465, 'fatima', 'blue', 25, 'ponytail', '#fde68a');
         this.teammates = [
             new Entity(140, 435, 'teammate', 'blue', 11, 'afro', '#d97706'),
             new Entity(90, 495, 'teammate', 'blue', 7, 'braids', '#92400e'),
@@ -1742,7 +1742,7 @@ class GameEngine {
                 new Entity(1100, 465, 'opponent', 'red', 99, 'buzz', '#fde68a'),
                 new Entity(1650, 435, 'opponent', 'red', 12, 'short', '#b45309'),
                 new Entity(2300, 485, 'opponent', 'red', 8, 'afro', '#78350f'),
-                new Entity(2880, 465, 'opponent', 'red', 55, 'rim_protector', '#92400e') // Posterized victim
+                new Entity(2880, 465, 'opponent', 'red', 2, 'ponytail', '#92400e') // Posterized victim
             ];
             for (const o of this.opponents) {
                 o.facing = 'left';
