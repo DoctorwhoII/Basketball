@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FATIMA #24 - Pixel Basketball Cinematic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container" role="application" aria-label="Fatima #24 Pixel Basketball Cinematic Experience">
+        <canvas id="gameCanvas" aria-label="Game canvas rendering pixel-art basketball action" role="img"></canvas>
+
+        <!-- Opening Screen Overlay -->
+        <div id="opening-screen" class="screen-overlay">
+            <div class="pixel-box">
+                <h1 class="glitch-title">FATIMA #24</h1>
+                <div class="subtitle-you">This is how I imagine you playing Basketball tbh</div>
+                <button id="tip-off-btn" class="pixel-btn" aria-label="Start Tip Off Animation">TIP OFF</button>
+            </div>
+        </div>
+
+        <!-- Victory Screen Overlay -->
+        <div id="victory-screen" class="screen-overlay hidden">
+            <div class="pixel-box">
+                <h1 class="victory-title">#24</h1>
+                <p class="victory-subtitle">All the best meri jaan, Give em Hell!</p>
+                <button id="replay-btn" class="pixel-btn" aria-label="Replay Experience">REPLAY</button>
+            </div>
+        </div>
+
+        <!-- In-game HUD / Sequence Info -->
+        <div id="hud" class="hidden" aria-live="polite">
+            <div id="sequence-label">SEQUENCE 1: DUNK</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
